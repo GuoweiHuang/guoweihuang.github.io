@@ -1,11 +1,11 @@
 baseURL = 'https://www.huangguowei.com/'
 languageCode = 'zh-cn'
-title = '郭伟煌的博客'
+title = '黄国位的博客'
 theme = 'custom-theme'
 
 [params]
-  description = "郭伟煌的个人博客网站"
-  author = "郭伟煌"
+  description = "黄国位的个人博客网站"
+  author = "黄国位"
   github = "guoweihuang"
   
 [menu]

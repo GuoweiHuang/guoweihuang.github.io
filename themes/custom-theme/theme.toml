@@ -8,7 +8,7 @@ features = []
 min_version = "0.41.0"
 
 [author]
-  name = "郭伟煌"
+  name = "黄国位"
   homepage = "https://guoweihuang.github.io/"
 
 [original]
