@@ -1,26 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on 郭伟煌的博客</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on 郭伟煌的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo框架使用教程 - 从零开始搭建博客</title>
-      <link>http://localhost:1313/posts/hugo-tutorial/</link>
-      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hugo-tutorial/</guid>
-      <description>Hugo框架使用教程 - 从零开始搭建博客 前言 Hugo是一个优秀的静态网站生成器，特别适合用来搭建博客网站。本文将详细介绍如何使用Hugo从零开始搭建一个完整的博客网站。&#xA;安装Hugo Ubuntu/Debian系统 sudo apt update sudo apt install hugo macOS系统 brew install hugo Windows系统 从Hugo官网下载安装包。&#xA;创建新站点 hugo new site myblog cd myblog 选择主题 Hugo有丰富的主题可供选择：&#xA;访问 Hugo Themes 选择喜欢的主题 下载并安装主题 cd themes git clone https://github.com/username/theme-name.git 配置站点 编辑 config.toml 文件：&#xA;baseURL = &amp;#39;https://yourdomain.com/&amp;#39; languageCode = &amp;#39;zh-cn&amp;#39; title = &amp;#39;我的博客&amp;#39; theme = &amp;#39;theme-name&amp;#39; [params] description = &amp;#34;个人博客描述&amp;#34; author = &amp;#34;作者姓名&amp;#34; 创建内容 创建文章 hugo new posts/my-first-post.md 文章格式 --- title: &amp;#34;文章标题&amp;#34; date: 2024-01-16 tags: [&amp;#34;标签1&amp;#34;, &amp;#34;标签2&amp;#34;] description: &amp;#34;文章描述&amp;#34; --- # 文章内容 这里是文章的具体内容.</description>
-    </item>
-    <item>
-      <title>Hello World - 我的第一篇博客文章</title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>Hello World - 我的第一篇博客文章 欢迎来到我的博客！这是我的第一篇使用Hugo框架创建的文章。&#xA;为什么选择Hugo？ Hugo是一个用Go语言编写的静态网站生成器，它具有以下优点：&#xA;速度快: 构建速度非常快，即使是大型网站也能在几秒钟内完成构建 简单易用: 配置简单，学习曲线平缓 功能强大: 支持多种内容格式，模板系统灵活 部署简单: 可以轻松部署到GitHub Pages、Netlify等平台 技术栈 这个博客网站使用了以下技术：&#xA;Hugo: 静态网站生成器 自定义主题: 简洁美观的设计 响应式设计: 支持各种设备访问 Markdown: 内容编写格式 未来计划 我计划在这个博客上分享：&#xA;技术学习心得 项目开发经验 生活感悟 读书笔记 结语 感谢你访问我的博客！希望这里的内容能对你有所帮助。如果你有任何建议或问题，欢迎在评论区留言。&#xA;发布于 2024年1月15日</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 黄国位的博客</title><link>https://www.huangguowei.com/posts/</link><description>Recent content in Posts on 黄国位的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.huangguowei.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo框架使用教程 - 从零开始搭建博客</title><link>https://www.huangguowei.com/posts/hugo-tutorial/</link><pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.huangguowei.com/posts/hugo-tutorial/</guid><description>Hugo框架使用教程 - 从零开始搭建博客 前言 Hugo是一个优秀的静态网站生成器，特别适合用来搭建博客网站。本文将详细介绍如何使用Hugo从零开始搭建一个完整的博客网站。
+安装Hugo Ubuntu/Debian系统 sudo apt update sudo apt install hugo macOS系统 brew install hugo Windows系统 从Hugo官网下载安装包。
+创建新站点 hugo new site myblog cd myblog 选择主题 Hugo有丰富的主题可供选择：
+访问 Hugo Themes 选择喜欢的主题 下载并安装主题 cd themes git clone https://github.com/username/theme-name.git 配置站点 编辑 config.toml 文件：
+baseURL = &amp;#39;https://yourdomain.com/&amp;#39; languageCode = &amp;#39;zh-cn&amp;#39; title = &amp;#39;我的博客&amp;#39; theme = &amp;#39;theme-name&amp;#39; [params] description = &amp;#34;个人博客描述&amp;#34; author = &amp;#34;作者姓名&amp;#34; 创建内容 创建文章 hugo new posts/my-first-post.md 文章格式 --- title: &amp;#34;文章标题&amp;#34; date: 2024-01-16 tags: [&amp;#34;标签1&amp;#34;, &amp;#34;标签2&amp;#34;] description: &amp;#34;文章描述&amp;#34; --- # 文章内容 这里是文章的具体内容.</description></item><item><title>Hello World - 我的第一篇博客文章</title><link>https://www.huangguowei.com/posts/hello-world/</link><pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.huangguowei.com/posts/hello-world/</guid><description>Hello World - 我的第一篇博客文章 欢迎来到我的博客！这是我的第一篇使用Hugo框架创建的文章。
+为什么选择Hugo？ Hugo是一个用Go语言编写的静态网站生成器，它具有以下优点：
+速度快: 构建速度非常快，即使是大型网站也能在几秒钟内完成构建 简单易用: 配置简单，学习曲线平缓 功能强大: 支持多种内容格式，模板系统灵活 部署简单: 可以轻松部署到GitHub Pages、Netlify等平台 技术栈 这个博客网站使用了以下技术：
+Hugo: 静态网站生成器 自定义主题: 简洁美观的设计 响应式设计: 支持各种设备访问 Markdown: 内容编写格式 未来计划 我计划在这个博客上分享：
+技术学习心得 项目开发经验 生活感悟 读书笔记 结语 感谢你访问我的博客！希望这里的内容能对你有所帮助。如果你有任何建议或问题，欢迎在评论区留言。
+发布于 2024年1月15日</description></item></channel></rss>
