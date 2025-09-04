@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开始 on 郭伟煌的博客</title>
+    <link>http://localhost:1313/tags/%E5%BC%80%E5%A7%8B/</link>
+    <description>Recent content in 开始 on 郭伟煌的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%BC%80%E5%A7%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World - 我的第一篇博客文章</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>Hello World - 我的第一篇博客文章 欢迎来到我的博客！这是我的第一篇使用Hugo框架创建的文章。&#xA;为什么选择Hugo？ Hugo是一个用Go语言编写的静态网站生成器，它具有以下优点：&#xA;速度快: 构建速度非常快，即使是大型网站也能在几秒钟内完成构建 简单易用: 配置简单，学习曲线平缓 功能强大: 支持多种内容格式，模板系统灵活 部署简单: 可以轻松部署到GitHub Pages、Netlify等平台 技术栈 这个博客网站使用了以下技术：&#xA;Hugo: 静态网站生成器 自定义主题: 简洁美观的设计 响应式设计: 支持各种设备访问 Markdown: 内容编写格式 未来计划 我计划在这个博客上分享：&#xA;技术学习心得 项目开发经验 生活感悟 读书笔记 结语 感谢你访问我的博客！希望这里的内容能对你有所帮助。如果你有任何建议或问题，欢迎在评论区留言。&#xA;发布于 2024年1月15日</description>
+    </item>
+  </channel>
+</rss>

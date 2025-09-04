@@ -1,0 +1,31 @@
+baseURL = 'https://guoweihuang.github.io/'
+languageCode = 'zh-cn'
+title = '郭伟煌的博客'
+theme = 'custom-theme'
+
+[params]
+  description = "郭伟煌的个人博客网站"
+  author = "郭伟煌"
+  github = "guoweihuang"
+  
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "博客"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

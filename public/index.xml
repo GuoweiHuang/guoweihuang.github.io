@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>郭伟煌的博客</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 郭伟煌的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo框架使用教程 - 从零开始搭建博客</title>
+      <link>http://localhost:1313/posts/hugo-tutorial/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hugo-tutorial/</guid>
+      <description>Hugo框架使用教程 - 从零开始搭建博客 前言 Hugo是一个优秀的静态网站生成器，特别适合用来搭建博客网站。本文将详细介绍如何使用Hugo从零开始搭建一个完整的博客网站。&#xA;安装Hugo Ubuntu/Debian系统 sudo apt update sudo apt install hugo macOS系统 brew install hugo Windows系统 从Hugo官网下载安装包。&#xA;创建新站点 hugo new site myblog cd myblog 选择主题 Hugo有丰富的主题可供选择：&#xA;访问 Hugo Themes 选择喜欢的主题 下载并安装主题 cd themes git clone https://github.com/username/theme-name.git 配置站点 编辑 config.toml 文件：&#xA;baseURL = &amp;#39;https://yourdomain.com/&amp;#39; languageCode = &amp;#39;zh-cn&amp;#39; title = &amp;#39;我的博客&amp;#39; theme = &amp;#39;theme-name&amp;#39; [params] description = &amp;#34;个人博客描述&amp;#34; author = &amp;#34;作者姓名&amp;#34; 创建内容 创建文章 hugo new posts/my-first-post.md 文章格式 --- title: &amp;#34;文章标题&amp;#34; date: 2024-01-16 tags: [&amp;#34;标签1&amp;#34;, &amp;#34;标签2&amp;#34;] description: &amp;#34;文章描述&amp;#34; --- # 文章内容 这里是文章的具体内容.</description>
+    </item>
+    <item>
+      <title>Hello World - 我的第一篇博客文章</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>Hello World - 我的第一篇博客文章 欢迎来到我的博客！这是我的第一篇使用Hugo框架创建的文章。&#xA;为什么选择Hugo？ Hugo是一个用Go语言编写的静态网站生成器，它具有以下优点：&#xA;速度快: 构建速度非常快，即使是大型网站也能在几秒钟内完成构建 简单易用: 配置简单，学习曲线平缓 功能强大: 支持多种内容格式，模板系统灵活 部署简单: 可以轻松部署到GitHub Pages、Netlify等平台 技术栈 这个博客网站使用了以下技术：&#xA;Hugo: 静态网站生成器 自定义主题: 简洁美观的设计 响应式设计: 支持各种设备访问 Markdown: 内容编写格式 未来计划 我计划在这个博客上分享：&#xA;技术学习心得 项目开发经验 生活感悟 读书笔记 结语 感谢你访问我的博客！希望这里的内容能对你有所帮助。如果你有任何建议或问题，欢迎在评论区留言。&#xA;发布于 2024年1月15日</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>关于我 个人简介 你好！我是郭伟煌，欢迎来到我的个人博客。&#xA;技术背景 我是一名热爱技术的开发者，主要关注：&#xA;前端开发: HTML, CSS, JavaScript, React, Vue 后端开发: Node.js, Python, Go 数据库: MySQL, MongoDB, Redis 云计算: AWS, Docker, Kubernetes 其他: Git, Linux, 自动化部署 工作经历 目前在一家科技公司担任全栈开发工程师 参与过多个Web应用和移动应用的开发 有丰富的项目管理和团队协作经验 学习目标 我一直在学习和提升自己的技能，当前的学习重点包括：&#xA;深入学习Go语言和微服务架构 探索云原生技术和DevOps实践 研究人工智能和机器学习的应用 提升系统设计和架构能力 兴趣爱好 除了编程，我还喜欢：&#xA;阅读: 技术书籍、科幻小说、历史传记 运动: 跑步、游泳、健身 音乐: 古典音乐、爵士乐 旅行: 探索新的地方和文化 博客内容 这个博客主要分享：&#xA;技术学习心得和经验总结 项目开发过程中的问题和解决方案 对新技术和行业趋势的思考 个人成长和学习方法的分享 联系方式 如果你有任何问题或建议，欢迎通过以下方式联系我：&#xA;GitHub: guoweihuang 邮箱: [你的邮箱地址] 微信: [你的微信号] 致谢 感谢你访问我的博客！希望这里的内容能对你有所帮助。如果你觉得某篇文章有价值，欢迎分享给更多的朋友。&#xA;最后更新于 2024年1月15日</description>
+    </item>
+  </channel>
+</rss>

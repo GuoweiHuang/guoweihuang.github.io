@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="posts-list">
+    <h1>博客文章</h1>
+    <div class="posts">
+        {{ range .Pages }}
+        <article class="post-item">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <time>{{ .Date.Format "2006-01-02" }}</time>
+            {{ if .Params.tags }}
+            <div class="tags">
+                {{ range .Params.tags }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+            <p>{{ .Summary }}</p>
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }} 
