@@ -2,6 +2,7 @@ baseURL = 'https://www.huangguowei.com/'
 languageCode = 'zh-cn'
 title = '黄国位的博客'
 theme = 'custom-theme'
+publishDir = 'docs'
 
 [params]
   description = "黄国位的个人博客网站"
