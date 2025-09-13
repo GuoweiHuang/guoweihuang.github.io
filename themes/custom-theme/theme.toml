@@ -1,17 +1,17 @@
-name = "Custom Theme"
+﻿name = "Custom Theme"
 license = "MIT"
-licenselink = "https://github.com/yourname/hugo-theme/blob/master/LICENSE"
-description = "A simple and clean Hugo theme"
-homepage = "https://example.com/"
-tags = []
-features = []
+licenselink = "https://github.com/guoweihuang/guoweihuang.github.io/blob/main/LICENSE"
+description = "A simple and clean Hugo theme for technical blog"
+homepage = "https://www.huangguowei.com/"
+tags = ["blog", "clean", "responsive", "technical"]
+features = ["responsive", "clean-design", "fast"]
 min_version = "0.41.0"
 
 [author]
   name = "黄国位"
-  homepage = "https://guoweihuang.github.io/"
+  homepage = "https://www.huangguowei.com/"
 
 [original]
   name = "Custom Theme"
-  homepage = "https://example.com/"
-  repo = "https://github.com/yourname/hugo-theme" 
+  homepage = "https://www.huangguowei.com/"
+  repo = "https://github.com/guoweihuang/guoweihuang.github.io"

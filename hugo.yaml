@@ -1,0 +1,30 @@
+﻿baseURL: 'https://www.huangguowei.com/'
+languageCode: 'zh-cn'
+title: 'Huang Guowei Blog'
+theme: 'custom-theme'
+publishDir: 'docs'
+
+params:
+  description: 'Personal blog about AI, robotics and embodied intelligence'
+  author: 'Huang Guowei'
+  github: 'guoweihuang'
+
+menu:
+  main:
+    - identifier: 'home'
+      name: 'Home'
+      url: '/'
+      weight: 1
+    - identifier: 'posts'
+      name: 'Posts'
+      url: '/posts/'
+      weight: 2
+    - identifier: 'about'
+      name: 'About'
+      url: '/about/'
+      weight: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
