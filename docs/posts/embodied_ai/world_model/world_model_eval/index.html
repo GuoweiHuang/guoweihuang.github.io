@@ -76,7 +76,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> geometry_msgs.msg <span style="color:#f92672">import</span> Pose
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EVACNode</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self):
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>client <span style="color:#f92672">=</span> evac_api<span style="color:#f92672">.</span>Client()
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>subscribe_action_topic(<span style="color:#e6db74">&#34;/evac_action&#34;</span>)
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>publish_state_topic(<span style="color:#e6db74">&#34;/evac_state&#34;</span>)
@@ -94,40 +94,40 @@
 <p>实时反馈优化模块采用仿真基于优化（SbO）方法，将世界模型作为仿真器，结合优化算法（如遗传算法或模拟退火）调整动作参数。材料[88]显示，改进的差分进化算法能够根据种群分布和适应度值动态调整F和CR参数，防止过早收敛，提高全局寻优能力。该算法通过ROS话题订阅仿真反馈（如碰撞次数、轨迹偏差），并实时更新动作参数（如抓取力度、避障路径），形成&quot;仿真-评估-优化&quot;闭环。</p>
 <p>代理模型（如分层Kriging模型）可进一步提升评估效率。材料[93]显示，增量式Kriging模型通过分块矩阵和矩阵递归构建的方式处理相关矩阵的求逆问题，可将建模效率提高数十倍。在机器人操作验证中，代理模型可近似世界模型的仿真输出，结合高/低可信度样本动态更新模型，减少直接仿真调用次数，加速优化过程。</p>
 <table>
-  <thead>
-      <tr>
-          <th>评估指标</th>
-          <th>计算方法</th>
-          <th>权重分配</th>
-          <th>优化目标</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>场景一致性</td>
-          <td>DINOv2特征匹配</td>
-          <td>0.3-0.4</td>
-          <td>最小化场景漂移</td>
-      </tr>
-      <tr>
-          <td>动作合理性</td>
-          <td>HSD/nDTW/Dynamics Score</td>
-          <td>0.4-0.5</td>
-          <td>最小化轨迹偏差</td>
-      </tr>
-      <tr>
-          <td>语义对齐</td>
-          <td>CLIP相似度</td>
-          <td>0.2-0.3</td>
-          <td>最大化指令匹配度</td>
-      </tr>
-      <tr>
-          <td>任务成功率</td>
-          <td>综合指标加权</td>
-          <td>动态调整</td>
-          <td>最大化成功率</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>评估指标</th>
+<th>计算方法</th>
+<th>权重分配</th>
+<th>优化目标</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景一致性</td>
+<td>DINOv2特征匹配</td>
+<td>0.3-0.4</td>
+<td>最小化场景漂移</td>
+</tr>
+<tr>
+<td>动作合理性</td>
+<td>HSD/nDTW/Dynamics Score</td>
+<td>0.4-0.5</td>
+<td>最小化轨迹偏差</td>
+</tr>
+<tr>
+<td>语义对齐</td>
+<td>CLIP相似度</td>
+<td>0.2-0.3</td>
+<td>最大化指令匹配度</td>
+</tr>
+<tr>
+<td>任务成功率</td>
+<td>综合指标加权</td>
+<td>动态调整</td>
+<td>最大化成功率</td>
+</tr>
+</tbody>
 </table>
 <p>评估验证机制的实现需考虑以下关键点：首先，指标计算模块需要与仿真环境实时同步，确保评估结果的及时性；其次，反馈优化算法需与仿真步长匹配，避免因优化延迟导致评估结果失真；最后，评估结果需以可视化形式呈现，便于研究人员理解优化过程。</p>
 <h2 id="五动作生成与优化策略">五、动作生成与优化策略</h2>
@@ -143,7 +143,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> evac_msgs.msg <span style="color:#f92672">import</span> SimulationState
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ActionOptimizer</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self):
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>subscribe_state_topic(<span style="color:#e6db74">&#34;/evac_state&#34;</span>)
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>publish_optimized_topic(<span style="color:#e6db74">&#34;/optimized_action&#34;</span>)
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>init_de_algorithm_params()
