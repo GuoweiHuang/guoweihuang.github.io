@@ -1,29 +1,21 @@
-# 黄国位的个人博客
+﻿# Guowei Huang的个人博客
 
-基于Hugo框架构建的个人博客网站。
-
-## 特性
-
-- 🚀 使用Hugo静态网站生成器，构建速度快
-- 🎨 自定义主题，简洁美观的设计
+基于Hugo框架构建的个人博客网站�?
+## 特�?
+- 🚀 使用Hugo静态网站生成器，构建速度�?- 🎨 自定义主题，简洁美观的设计
 - 📱 响应式设计，支持各种设备访问
 - 📝 Markdown格式编写内容
-- 🏷️ 支持标签和分类
-- 🔍 SEO友好
+- 🏷�?支持标签和分�?- 🔍 SEO友好
 
 ## 技术栈
 
 - **Hugo**: 静态网站生成器
-- **HTML/CSS**: 前端页面和样式
-- **Markdown**: 内容编写格式
-- **Git**: 版本控制和部署
-
-## 本地开发
-
+- **HTML/CSS**: 前端页面和样�?- **Markdown**: 内容编写格式
+- **Git**: 版本控制和部�?
+## 本地开�?
 ### 环境要求
 
-- Hugo 0.80.0 或更高版本
-- Git
+- Hugo 0.80.0 或更高版�?- Git
 
 ### 安装Hugo
 
@@ -39,8 +31,7 @@ brew install hugo
 ```
 
 #### Windows
-从[Hugo官网](https://gohugo.io/installation/windows/)下载安装包。
-
+从[Hugo官网](https://gohugo.io/installation/windows/)下载安装包�?
 ### 运行项目
 
 1. 克隆仓库
@@ -49,33 +40,28 @@ git clone https://github.com/guoweihuang/guoweihuang.github.io.git
 cd guoweihuang.github.io
 ```
 
-2. 启动本地服务器
-```bash
+2. 启动本地服务�?```bash
 hugo server --buildDrafts
 ```
 
-3. 在浏览器中访问 `http://localhost:1313`
+3. 在浏览器中访�?`http://localhost:1313`
 
 ## 项目结构
 
 ```
 .
 ├── content/          # 内容文件
-│   ├── posts/        # 博客文章
-│   └── about.md      # 关于页面
+�?  ├── posts/        # 博客文章
+�?  └── about.md      # 关于页面
 ├── themes/           # 主题文件
-│   └── custom-theme/ # 自定义主题
-├── static/           # 静态资源
-├── layouts/          # 布局模板
+�?  └── custom-theme/ # 自定义主�?├── static/           # 静态资�?├── layouts/          # 布局模板
 ├── hugo.toml         # Hugo配置文件
 ├── deploy.sh         # 部署脚本
 └── README.md         # 项目说明
 ```
 
-## 添加新内容
-
-### 创建新文章
-```bash
+## 添加新内�?
+### 创建新文�?```bash
 hugo new posts/文章标题.md
 ```
 
@@ -107,22 +93,17 @@ description: "文章描述"
 hugo --minify
 ```
 
-2. 将 `public` 目录中的文件部署到Web服务器
-
-## 自定义主题
-
-主题文件位于 `themes/custom-theme/` 目录：
-
+2. �?`public` 目录中的文件部署到Web服务�?
+## 自定义主�?
+主题文件位于 `themes/custom-theme/` 目录�?
 - `layouts/`: HTML模板文件
 - `static/css/`: CSS样式文件
 - `theme.toml`: 主题配置文件
 
 ## 贡献
 
-欢迎提交Issue和Pull Request！
-
-## 许可证
-
+欢迎提交Issue和Pull Request�?
+## 许可�?
 MIT License
 
 ## 联系方式
@@ -132,4 +113,4 @@ MIT License
 
 ---
 
-*最后更新于 2024年1月* 
+*最后更新于 2024�?�? 
