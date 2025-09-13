@@ -49,7 +49,7 @@ AirSim作为微软开发的机器人仿真平台，提供了丰富的API接口�
 
 世界模型仿真器与ROS的集成可通过自定义ROS节点实现。例如，EVAC的ROS节点可封装为以下伪代码：
 
-`python
+```python
 # EVAC ROS节点伪代码
 import evac_api
 from geometry_msgs.msg import Pose
@@ -66,7 +66,7 @@ class EVACNode:
         # 获取仿真反馈并发布
         state = self.client.get_state()
         self.pub.publish(state)
-`
+```
 
 ## 四、评估验证机制设计
 
@@ -103,7 +103,7 @@ class EVACNode:
 
 动作生成优化器的实现可采用以下伪代码：
 
-`python
+```python
 # 动作优化伪代码
 import rospy
 from std_msgs.msg import Float32
@@ -122,7 +122,7 @@ class ActionOptimizer:
         optimized_params = self.de.optimize(fitness)
         # 发布优化后的动作参数
         self.pub.publish(optimized_params)
-`
+```
 
 ## 六、系统集成与验证
 
@@ -132,7 +132,7 @@ class ActionOptimizer:
 
 其次，设计启动文件（launch）实现各模块的协同运行。launch文件可配置参数（如仿真步长、优化算法参数）并启动所有必要节点，确保系统的一致性和稳定性。例如，以下launch文件可启动指令-世界模型联合系统：
 
-`xml
+```xml
 <launch>
     <!-- 启动指令理解系统 -->
     <node pkg="llm_node" type="llm_node.py" name="llm_node" output="screen">
@@ -152,7 +152,7 @@ class ActionOptimizer:
         <param name="max_iterations" value="100" />
     </node>
 </launch>
-`
+```
 
 系统验证需采用多场景测试和性能评估方法。根据材料[13][26]，EWMBench的基准数据集涵盖了家居、工业、医疗三大场景的10类典型机器人操作任务和刚体/柔体/流体/关节物体等多种交互对象，包含超过300个测试样本及30%挑战性场景（低光照/部分遮挡）。这些场景可用于验证系统的鲁棒性和适应性。
 

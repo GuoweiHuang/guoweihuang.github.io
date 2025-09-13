@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.huangguowei.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/nvidia/</loc>
+    <loc>http://localhost:1313/tags/nvidia/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</loc>
+    <loc>http://localhost:1313/tags/%E4%B8%96%E7%95%8C%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/posts/embodied_ai/world_model/world_model_and_vla/</loc>
+    <loc>http://localhost:1313/posts/embodied_ai/world_model/world_model_and_vla/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <loc>http://localhost:1313/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/</loc>
+    <loc>http://localhost:1313/tags/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
+    <loc>http://localhost:1313/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://localhost:1313/categories/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/%E7%89%A9%E7%90%86ai/</loc>
+    <loc>http://localhost:1313/tags/%E7%89%A9%E7%90%86ai/</loc>
     <lastmod>2025-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/posts/embodied_ai/world_model/world_model_eval/</loc>
+    <loc>http://localhost:1313/posts/embodied_ai/world_model/world_model_eval/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/%E4%BB%BF%E7%9C%9F%E9%AA%8C%E8%AF%81/</loc>
+    <loc>http://localhost:1313/tags/%E4%BB%BF%E7%9C%9F%E9%AA%8C%E8%AF%81/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/tags/%E6%8C%87%E4%BB%A4%E7%90%86%E8%A7%A3/</loc>
+    <loc>http://localhost:1313/tags/%E6%8C%87%E4%BB%A4%E7%90%86%E8%A7%A3/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.huangguowei.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-01-15T00:00:00+00:00</lastmod>
   </url>
 </urlset>

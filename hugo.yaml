@@ -1,6 +1,6 @@
 ﻿baseURL: 'https://www.huangguowei.com/'
 languageCode: 'zh-cn'
-title: 'Huang Guowei Blog'
+title: "Guowei's AI Blog"
 theme: 'custom-theme'
 publishDir: 'docs'
 

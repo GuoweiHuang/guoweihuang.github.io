@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta name="generator" content="Hugo 0.148.2">
+	<meta name="generator" content="Hugo 0.148.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huang Guowei Blog</title>
+    <title>Guowei&#39;s AI Blog</title>
     <meta name="description" content="Personal blog about AI, robotics and embodied intelligence">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -12,7 +12,7 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">
-                <a href="https://www.huangguowei.com/">Huang Guowei Blog</a>
+                <a href="http://localhost:1313/">Guowei&#39;s AI Blog</a>
             </h1>
             <nav class="nav">
                 
@@ -148,24 +148,23 @@
 <p>AirSim作为微软开发的机器人仿真平台，提供了丰富的API接口和多传感器支持，适合与LLM结合实现指令驱动的仿真。AirSim的drivetrain和yaw_mode参数可直接映射到机器人控制接口，支持&quot;ForwardOnly&quot;和&quot;MaxDegreeOfFreedom&quot;两种模式，分别适用于FPV视角和全向控制场景。</p>
 <p><strong>世界模型仿真器的实现需解决三个关键问题：多模态输入处理、实时参数调整和仿真反馈生成</strong>。多模态输入处理模块负责整合视觉、语言指令和环境传感器数据，形成统一的仿真输入。实时参数调整模块根据指令解析系统的输出，动态更新仿真环境中的机器人参数（如关节角度、速度、力度）和环境参数（如光照、障碍物位置）。仿真反馈生成模块则负责记录仿真过程中的关键指标，如碰撞次数、轨迹偏差、任务完成时间等，为后续的优化提供依据。</p>
 <p>世界模型仿真器与ROS的集成可通过自定义ROS节点实现。例如，EVAC的ROS节点可封装为以下伪代码：</p>
-<p>`python</p>
-<h1 id="evac-ros节点伪代码">EVAC ROS节点伪代码</h1>
-<p>import evac_api
-from geometry_msgs.msg import Pose</p>
-<p>class EVACNode:
-def <strong>init</strong>(self):
-self.client = evac_api.Client()
-self.subscribe_action_topic(&quot;/evac_action&rdquo;)
-self.publish_state_topic(&quot;/evac_state&rdquo;)</p>
-<pre><code>def on_action(self, pose: Pose):
-    # 调用EVAC API执行动作
-    self.client.set_end_effector_pose(pose)
-    # 获取仿真反馈并发布
-    state = self.client.get_state()
-    self.pub.publish(state)
-</code></pre>
-<p>`</p>
-<h2 id="四评估验证机制设计">四、评估验证机制设计</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># EVAC ROS节点伪代码</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> evac_api
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> geometry_msgs.msg <span style="color:#f92672">import</span> Pose
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EVACNode</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>client <span style="color:#f92672">=</span> evac_api<span style="color:#f92672">.</span>Client()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>subscribe_action_topic(<span style="color:#e6db74">&#34;/evac_action&#34;</span>)
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>publish_state_topic(<span style="color:#e6db74">&#34;/evac_state&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">on_action</span>(self, pose: Pose):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 调用EVAC API执行动作</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>client<span style="color:#f92672">.</span>set_end_effector_pose(pose)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 获取仿真反馈并发布</span>
+</span></span><span style="display:flex;"><span>        state <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>client<span style="color:#f92672">.</span>get_state()
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>pub<span style="color:#f92672">.</span>publish(state)
+</span></span></code></pre></div><h2 id="四评估验证机制设计">四、评估验证机制设计</h2>
 <p>评估验证机制负责量化机器人操作的成功率，并根据结果进行优化。EWMBench作为智元机器人开源的具身世界模型评测基准，提供了三维度评估体系：场景一致性、动作合理性和语义对齐与多样性。</p>
 <p>场景一致性评估生成场景中背景、物体和视角的稳固度与真实性，采用微调过的DINOv2特征进行量化。动作合理性评估利用HSD（对称豪斯多夫距离）、nDTW（归一化动态时间规整）和Dynamics Score三重互补指标，协同精确评估生成动作的合理性与动力学真实度。语义对齐与多样性则结合多模态大模型（如CLIP）和语义分析，从全局指令对齐度、关键步骤语义准确性和逻辑合理性等多层次评估操作与指令的匹配度。</p>
 <p>评估验证机制的关键是多指标权重分配和实时反馈优化。基于博弈理论组合权重的方法可平衡不同指标的重要性，避免单一指标主导评估结果。例如，对于抓取任务，动作合理性和语义对齐可能更重要；而对于导航任务，场景一致性和动作合理性则更为关键。</p>
